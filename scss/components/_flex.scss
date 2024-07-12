@@ -42,6 +42,18 @@
                 }
             }
         }
+
+        // ファーストビュー
+        &.-f-viewContent{
+            .flexItem{
+                &:nth-child(1){width: 75%;}
+                &:nth-child(2){width: 100%;}
+                @include min(768){
+                    &:nth-child(1){width: 25%; min-width: 200px;}
+                    &:nth-child(2){width: 70%;}
+                }
+            }
+        }
     }
     // コンテンツカラム（sp:pc 2:2）
     &.-col2_2{

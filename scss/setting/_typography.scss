@@ -89,6 +89,7 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button{
     &.-ls-3{letter-spacing: .3rem;}
     &.-ls-4{letter-spacing: .4rem;}
     &.-ls-5{letter-spacing: .5rem;}
+    &.-ls-15{letter-spacing: 1.5rem;}
 
     &.-ls-n_s {@include max(768){ letter-spacing: normal;}}
 	&.-ls-1_s {@include max(768){ letter-spacing: .1rem; }}
@@ -150,6 +151,27 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button{
             }
         }
     }
+
+    // ひらがな・フリガナ
+    &.-hurikana{
+        position: relative;
+        display: inline-block;
+        &::after{
+            content: "きらめき";
+            position: absolute;
+            top: -5%;
+            left: 45%;
+            transform: translateX(-50%);
+            width: 100%;
+            font-size: 1rem;
+            color: $main-color--w;
+            text-align: center;
+            letter-spacing: .5rem;
+            @include min(768){
+
+            }
+        }
+    }
 }
 
 // 大きさ
@@ -191,8 +213,8 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button{
             &.-s16{@include max(768){font-size: 1.6rem;}}
         }
         &.s-3L{
-            font-size: 2.8rem;
-            @include min(768){font-size: clamp(2.1rem, 3vw, 4.8rem);}
+            font-size: 5rem;
+            @include min(768){font-size: clamp(5rem, 5vw, 9rem);}
             &.-s16{@include max(768){font-size: 1.6rem;}}
             &.-s18{@include max(768){font-size: 1.8rem;}}
         }

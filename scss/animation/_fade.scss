@@ -23,6 +23,23 @@
             opacity: 1;
         }
     }
+    &-fadeLoop{
+        opacity: 0;
+        animation-name:fadeLoopAnime;
+        perspective-origin: left center;
+        animation-fill-mode: forwards;
+    }
+    @keyframes fadeLoopAnime{
+        0% {
+            opacity: 0;
+        }
+        60% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
     /* ---------------------------------------
         fadeUPアニメーション
     --------------------------------------- */
