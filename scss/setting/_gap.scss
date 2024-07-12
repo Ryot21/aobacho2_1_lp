@@ -86,7 +86,7 @@
 .mgl9 {@include min(768){margin-left:9% !important;}}
 .mgl10 {@include min(768){margin-left:10% !important;}}
 
-
+.mgl0{margin-left: 0 !important;}
 
 /* ------------------------
 　　　margin 右幅
@@ -115,6 +115,8 @@
 .mgr8 {@include min(768){margin-right:8% !important;}}
 .mgr9 {@include min(768){margin-right:9% !important;}}
 .mgr10 {@include min(768){margin-right:10% !important;}}
+
+.mgr0{margin-right: 0 !important;}
 
 /* ------------------------
 　　　margin 上幅

@@ -387,6 +387,11 @@ h1.s-S, h2.s-S, h3.s-S, h4.s-S, h5.s-S, h6.s-S, p.s-S, a.s-S, span.s-S, label.s-
   }
 }
 @media (768px >= width) {
+  h1.s-S.-s10, h2.s-S.-s10, h3.s-S.-s10, h4.s-S.-s10, h5.s-S.-s10, h6.s-S.-s10, p.s-S.-s10, a.s-S.-s10, span.s-S.-s10, label.s-S.-s10, button.s-S.-s10 {
+    font-size: 1rem;
+  }
+}
+@media (768px >= width) {
   h1.s-S.-s12, h2.s-S.-s12, h3.s-S.-s12, h4.s-S.-s12, h5.s-S.-s12, h6.s-S.-s12, p.s-S.-s12, a.s-S.-s12, span.s-S.-s12, label.s-S.-s12, button.s-S.-s12 {
     font-size: 1.2rem;
   }
@@ -1126,6 +1131,10 @@ span.-block {
   }
 }
 
+.mgl0 {
+  margin-left: 0 !important;
+}
+
 /* ------------------------
 　　　margin 右幅
 ------------------------ */
@@ -1247,6 +1256,10 @@ span.-block {
   .mgr10 {
     margin-right: 10% !important;
   }
+}
+
+.mgr0 {
+  margin-right: 0 !important;
 }
 
 /* ------------------------
@@ -2767,6 +2780,25 @@ button.swiper-pagination-bullet {
   pointer-events: auto !important;
 }
 
+.w95.-right, .w95s.-right,
+.w90.-right, .w90s.-right,
+.w85.-right, .w85s.-right,
+.w80.-right, .w80s.-right,
+.w50.-right, .w50s.-right,
+.w30.-right, .w30s.-right {
+  margin-left: auto;
+  margin-right: 0;
+}
+.w95.-left, .w95s.-left,
+.w90.-left, .w90s.-left,
+.w85.-left, .w85s.-left,
+.w80.-left, .w80s.-left,
+.w50.-left, .w50s.-left,
+.w30.-left, .w30s.-left {
+  margin-left: 0;
+  margin-right: auto;
+}
+
 .w1100 {
   width: 100%;
   margin: auto;
@@ -2793,6 +2825,26 @@ button.swiper-pagination-bullet {
   margin: auto;
 }
 
+.w85 {
+  width: 85%;
+  margin: auto;
+}
+
+.w80 {
+  width: 80%;
+  margin: auto;
+}
+
+.w50 {
+  width: 50%;
+  margin: auto;
+}
+
+.w30 {
+  width: 30% !important;
+  margin: auto;
+}
+
 @media (768px >= width) {
   .w95s {
     width: 95% !important;
@@ -2803,6 +2855,34 @@ button.swiper-pagination-bullet {
 @media (768px >= width) {
   .w90s {
     width: 90% !important;
+    margin: auto;
+  }
+}
+
+@media (768px >= width) {
+  .w85s {
+    width: 85%;
+    margin: auto;
+  }
+}
+
+@media (768px >= width) {
+  .w80s {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media (768px >= width) {
+  .w50s {
+    width: 50%;
+    margin: auto;
+  }
+}
+
+@media (768px >= width) {
+  .w30s {
+    width: 30% !important;
     margin: auto;
   }
 }

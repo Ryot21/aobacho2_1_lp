@@ -1,4 +1,19 @@
 // 共通
+.w95,.w95s,
+.w90,.w90s,
+.w85,.w85s,
+.w80,.w80s,
+.w50,.w50s,
+.w30,.w30s{
+    &.-right{
+        margin-left: auto;
+        margin-right: 0;
+    }
+    &.-left{
+        margin-left: 0;
+        margin-right: auto;
+    }
+}
 
 // 横幅
 .w1100{
@@ -21,6 +36,22 @@
     width: 90%;
     margin: auto;
 }
+.w85{
+    width: 85%;
+    margin: auto;
+}
+.w80{
+    width: 80%;
+    margin: auto;
+}
+.w50{
+    width: 50%;
+    margin: auto;
+}
+.w30{
+    width: 30% !important;
+    margin: auto;
+}
 .w95s{
     @include max(768){
         width: 95% !important;
@@ -30,6 +61,30 @@
 .w90s{
     @include max(768){
         width: 90% !important;
+        margin: auto;
+    }
+}
+.w85s{
+    @include max(768){
+        width: 85%;
+        margin: auto;
+    }
+}
+.w80s{
+    @include max(768){
+        width: 80%;
+        margin: auto;
+    }
+}
+.w50s{
+    @include max(768){
+        width: 50%;
+        margin: auto;
+    }
+}
+.w30s{
+    @include max(768){
+        width: 30% !important;
         margin: auto;
     }
 }
