@@ -184,6 +184,29 @@
 				transform: translate(-50%, -50%);
 				width: 100%;
 			}
+			// 間取りスライダー関係
+			&.-madori{
+				&__No{
+					top: .5%;
+					left: 8%;
+					width: 11%;
+				}
+				&__Des{
+					top: .5%;
+					left: 25%;
+					width: 73%;
+				}
+				&__Title{
+					top: 82.5%;
+					left: 50%;
+					transform: translateX(-50%);
+					width: 75%;
+					&.__No5{
+						top: 80%;
+						width: 70%;
+					}
+				}
+			}
 		}
 	}
 
