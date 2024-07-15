@@ -167,14 +167,18 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button{
             color: $main-color--w;
             text-align: center;
             letter-spacing: .5rem;
-            @include min(768){
-
+        }
+        &.-bl{
+            &::after{
+                color: $main-color--b !important;
             }
         }
         // 
         &.s-LL{
             &::after{
-                display: none;
+                @include max(768){
+                    display: none;
+                }
             }
         }
     }

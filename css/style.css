@@ -361,8 +361,13 @@ h1.-hurikana::after, h2.-hurikana::after, h3.-hurikana::after, h4.-hurikana::aft
   text-align: center;
   letter-spacing: 0.5rem;
 }
-h1.-hurikana.s-LL::after, h2.-hurikana.s-LL::after, h3.-hurikana.s-LL::after, h4.-hurikana.s-LL::after, h5.-hurikana.s-LL::after, h6.-hurikana.s-LL::after, p.-hurikana.s-LL::after, a.-hurikana.s-LL::after, span.-hurikana.s-LL::after, label.-hurikana.s-LL::after, button.-hurikana.s-LL::after {
-  display: none;
+h1.-hurikana.-bl::after, h2.-hurikana.-bl::after, h3.-hurikana.-bl::after, h4.-hurikana.-bl::after, h5.-hurikana.-bl::after, h6.-hurikana.-bl::after, p.-hurikana.-bl::after, a.-hurikana.-bl::after, span.-hurikana.-bl::after, label.-hurikana.-bl::after, button.-hurikana.-bl::after {
+  color: #3b3b3b !important;
+}
+@media (768px >= width) {
+  h1.-hurikana.s-LL::after, h2.-hurikana.s-LL::after, h3.-hurikana.s-LL::after, h4.-hurikana.s-LL::after, h5.-hurikana.s-LL::after, h6.-hurikana.s-LL::after, p.-hurikana.s-LL::after, a.-hurikana.s-LL::after, span.-hurikana.s-LL::after, label.-hurikana.s-LL::after, button.-hurikana.s-LL::after {
+    display: none;
+  }
 }
 
 html {
