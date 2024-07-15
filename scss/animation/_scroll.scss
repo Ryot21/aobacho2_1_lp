@@ -38,11 +38,9 @@
         pointer-events: none;
         opacity: 0;
     }
-    10%{
+    1%{
         pointer-events: all;
-    }
-    50% {
-        opacity: .5;
+        opacity: 1;
     }
     100% {
        opacity: 1;
@@ -51,7 +49,7 @@
 
 .a-scroll-on{
     @include min(768){
-        opacity: 0;
+        // opacity: 0;
         animation: scroll-onNav;
         animation-timeline: scroll();
         animation-range: cover 0% cover 100%;

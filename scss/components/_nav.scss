@@ -5,12 +5,10 @@
     left: 86%;
 	width: 33px;
 	height: 0;
-	// opacity: .7;
 	z-index: 998;
 	@include min(768){
-		top: 1.5%;
+		top: 2.5%;
 		left: 94%;
-		opacity: .7;
 	}
 	@include min(1200){
 		left: 95.5%;

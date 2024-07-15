@@ -361,6 +361,10 @@ h1.-hurikana::after, h2.-hurikana::after, h3.-hurikana::after, h4.-hurikana::aft
   text-align: center;
   letter-spacing: 0.5rem;
 }
+h1.-hurikana.s-LL::after, h2.-hurikana.s-LL::after, h3.-hurikana.s-LL::after, h4.-hurikana.s-LL::after, h5.-hurikana.s-LL::after, h6.-hurikana.s-LL::after, p.-hurikana.s-LL::after, a.-hurikana.s-LL::after, span.-hurikana.s-LL::after, label.-hurikana.s-LL::after, button.-hurikana.s-LL::after {
+  display: none;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -2789,6 +2793,17 @@ button.swiper-pagination-bullet {
   margin-left: auto;
   margin-right: 0;
 }
+@media (768px >= width) {
+  .w95.-right_s, .w95s.-right_s,
+  .w90.-right_s, .w90s.-right_s,
+  .w85.-right_s, .w85s.-right_s,
+  .w80.-right_s, .w80s.-right_s,
+  .w50.-right_s, .w50s.-right_s,
+  .w30.-right_s, .w30s.-right_s {
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
 .w95.-left, .w95s.-left,
 .w90.-left, .w90s.-left,
 .w85.-left, .w85s.-left,
@@ -2798,10 +2813,26 @@ button.swiper-pagination-bullet {
   margin-left: 0;
   margin-right: auto;
 }
+@media (768px >= width) {
+  .w95.-left_s, .w95s.-left_s,
+  .w90.-left_s, .w90s.-left_s,
+  .w85.-left_s, .w85s.-left_s,
+  .w80.-left_s, .w80s.-left_s,
+  .w50.-left_s, .w50s.-left_s,
+  .w30.-left_s, .w30s.-left_s {
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
 
 .w1100 {
   width: 100%;
   margin: auto;
+}
+@media (width >= 768px) {
+  .w1100 {
+    width: 90%;
+  }
 }
 @media (width >= 1100px) {
   .w1100 {
@@ -2861,21 +2892,21 @@ button.swiper-pagination-bullet {
 
 @media (768px >= width) {
   .w85s {
-    width: 85%;
+    width: 85% !important;
     margin: auto;
   }
 }
 
 @media (768px >= width) {
   .w80s {
-    width: 80%;
+    width: 80% !important;
     margin: auto;
   }
 }
 
 @media (768px >= width) {
   .w50s {
-    width: 50%;
+    width: 50% !important;
     margin: auto;
   }
 }
@@ -2885,6 +2916,20 @@ button.swiper-pagination-bullet {
     width: 30% !important;
     margin: auto;
   }
+}
+
+.c-borderBtm {
+  position: relative;
+}
+.c-borderBtm::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 1px;
+  background: #ffffff;
 }
 
 .c-borderBox {
@@ -3795,9 +3840,8 @@ button.swiper-pagination-bullet {
 }
 @media (width >= 768px) {
   .c-hnav {
-    top: 1.5%;
+    top: 2.5%;
     left: 94%;
-    opacity: 0.7;
   }
 }
 @media (width >= 1200px) {
@@ -4402,6 +4446,51 @@ button.swiper-pagination-bullet {
 .c-contents.-imgBg .c-contentsBox.-madori__Title.__No5 {
   top: 80%;
   width: 70%;
+}
+.c-contents.-imgBg .c-contentsBox.-contentsInner {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.c-contents.-imgBg .c-contentsBox.-kukaku__Main {
+  top: 5%;
+  left: 5%;
+}
+@media (width >= 768px) {
+  .c-contents.-imgBg .c-contentsBox.-kukaku__Main {
+    top: 5%;
+    left: 0%;
+  }
+}
+.c-contents.-imgBg .c-contentsBox.-kukaku__subTitle {
+  top: 76.5%;
+  left: 6%;
+}
+@media (width >= 768px) {
+  .c-contents.-imgBg .c-contentsBox.-kukaku__subTitle {
+    top: 47%;
+    left: 1%;
+  }
+}
+.c-contents.-imgBg .c-contentsBox.-kukaku__subDes {
+  top: 84.5%;
+  left: 38%;
+}
+@media (width >= 768px) {
+  .c-contents.-imgBg .c-contentsBox.-kukaku__subDes {
+    top: 77%;
+    left: 0%;
+  }
+}
+.c-contents.-imgBg .c-contentsBox.-special03 {
+  top: 0%;
+  left: 0%;
+}
+@media (width >= 768px) {
+  .c-contents.-imgBg .c-contentsBox.-special03 {
+    top: -2%;
+    left: 25%;
+  }
 }
 .c-contents.-returnBtn a {
   display: block;
@@ -7159,11 +7248,9 @@ a {
     pointer-events: none;
     opacity: 0;
   }
-  10% {
+  1% {
     pointer-events: all;
-  }
-  50% {
-    opacity: 0.5;
+    opacity: 1;
   }
   100% {
     opacity: 1;
@@ -7171,7 +7258,6 @@ a {
 }
 @media (width >= 768px) {
   .a-scroll-on {
-    opacity: 0;
     animation: scroll-onNav;
     animation-timeline: scroll();
     animation-range: cover 0% cover 100%;

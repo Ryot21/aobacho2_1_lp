@@ -207,6 +207,53 @@
 					}
 				}
 			}
+			// 建売街区 全体図
+			&.-contentsInner{
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				.imgBox{
+					// @include min(768){
+					// 	height: 85%;
+					// 	width: 100%;
+					// }
+				}
+			}
+			&.-kukaku{
+				&__Main{
+					top: 5%;
+					left: 5%;
+					@include min(768){
+						top: 5%;
+						left: 0%;
+					}
+				}
+				&__subTitle{
+					top: 76.5%;
+					left: 6%;
+					@include min(768){
+						top: 47%;
+						left: 1%;
+					}
+				}
+				&__subDes{
+					top: 84.5%;
+					left: 38%;
+					@include min(768){
+						top: 77%;
+						left: 0%;
+					}
+				}
+			}
+			// 特別仕様
+			&.-special03{
+				top: 0%;
+				left: 0%;
+				@include min(768){
+					top: -2%;
+					left: 25%;
+				}
+			}
 		}
 	}
 
