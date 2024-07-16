@@ -255,6 +255,37 @@
 					left: 25%;
 				}
 			}
+			// カフェ
+			&.-cafe{
+				&-title{
+					top: 3%;
+					left: 50%;
+					transform: translateX(-50%);
+					width: 100%;
+					@include min(768){top: 8%;}
+				}
+				&-pic01{
+					top: 10%;
+					left: 50%;
+					transform: translateX(-50%);
+					width: 100%;
+					@include min(768){top: 28%;}
+				}
+				&-pic02{
+					top: 39%;
+					left: 50%;
+					transform: translateX(-50%);
+					width: 100%;
+					@include min(768){top: 51%;}
+				}
+				&-pic03{
+					top: 68%;
+					left: 50%;
+					transform: translateX(-50%);
+					width: 100%;
+					@include min(768){top: 74%;}
+				}
+			}
 		}
 	}
 
