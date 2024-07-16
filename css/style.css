@@ -352,14 +352,14 @@ h1.-hurikana, h2.-hurikana, h3.-hurikana, h4.-hurikana, h5.-hurikana, h6.-hurika
 h1.-hurikana::after, h2.-hurikana::after, h3.-hurikana::after, h4.-hurikana::after, h5.-hurikana::after, h6.-hurikana::after, p.-hurikana::after, a.-hurikana::after, span.-hurikana::after, label.-hurikana::after, button.-hurikana::after {
   content: "きらめき";
   position: absolute;
-  top: -5%;
-  left: 45%;
+  top: -7%;
+  left: 43%;
   transform: translateX(-50%);
   width: 100%;
   font-size: 1rem;
   color: #ffffff;
   text-align: center;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.25rem;
 }
 h1.-hurikana.-bl::after, h2.-hurikana.-bl::after, h3.-hurikana.-bl::after, h4.-hurikana.-bl::after, h5.-hurikana.-bl::after, h6.-hurikana.-bl::after, p.-hurikana.-bl::after, a.-hurikana.-bl::after, span.-hurikana.-bl::after, label.-hurikana.-bl::after, button.-hurikana.-bl::after {
   color: #3b3b3b !important;
@@ -4431,6 +4431,7 @@ button.swiper-pagination-bullet {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
+  height: 100%;
 }
 .c-contents.-imgBg .c-contentsBox.-madori__No {
   top: 0.5%;

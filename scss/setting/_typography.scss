@@ -159,14 +159,14 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button{
         &::after{
             content: "きらめき";
             position: absolute;
-            top: -5%;
-            left: 45%;
+            top: -7%;
+            left: 43%;
             transform: translateX(-50%);
             width: 100%;
             font-size: 1rem;
             color: $main-color--w;
             text-align: center;
-            letter-spacing: .5rem;
+            letter-spacing: .25rem;
         }
         &.-bl{
             &::after{
