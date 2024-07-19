@@ -2936,6 +2936,11 @@ button.swiper-pagination-bullet {
   height: 1px;
   background: #ffffff;
 }
+@media (width >= 1400px) {
+  .c-borderBtm.-cafe::after {
+    bottom: -10%;
+  }
+}
 
 .c-borderBox {
   padding: 3%;
@@ -4506,7 +4511,22 @@ button.swiper-pagination-bullet {
 }
 @media (width >= 768px) {
   .c-contents.-imgBg .c-contentsBox.-cafe-title {
-    top: 8%;
+    top: 2%;
+  }
+}
+@media (width >= 1000px) {
+  .c-contents.-imgBg .c-contentsBox.-cafe-title {
+    top: 6%;
+  }
+}
+@media (width >= 1200px) {
+  .c-contents.-imgBg .c-contentsBox.-cafe-title {
+    top: 6%;
+  }
+}
+@media (width >= 1400px) {
+  .c-contents.-imgBg .c-contentsBox.-cafe-title {
+    top: 10.5%;
   }
 }
 .c-contents.-imgBg .c-contentsBox.-cafe-pic01 {
@@ -4516,6 +4536,21 @@ button.swiper-pagination-bullet {
   width: 100%;
 }
 @media (width >= 768px) {
+  .c-contents.-imgBg .c-contentsBox.-cafe-pic01 {
+    top: 18.5%;
+  }
+}
+@media (width >= 1000px) {
+  .c-contents.-imgBg .c-contentsBox.-cafe-pic01 {
+    top: 23.5%;
+  }
+}
+@media (width >= 1200px) {
+  .c-contents.-imgBg .c-contentsBox.-cafe-pic01 {
+    top: 23.5%;
+  }
+}
+@media (width >= 1400px) {
   .c-contents.-imgBg .c-contentsBox.-cafe-pic01 {
     top: 28%;
   }
@@ -4528,6 +4563,21 @@ button.swiper-pagination-bullet {
 }
 @media (width >= 768px) {
   .c-contents.-imgBg .c-contentsBox.-cafe-pic02 {
+    top: 45.5%;
+  }
+}
+@media (width >= 1000px) {
+  .c-contents.-imgBg .c-contentsBox.-cafe-pic02 {
+    top: 49.5%;
+  }
+}
+@media (width >= 1200px) {
+  .c-contents.-imgBg .c-contentsBox.-cafe-pic02 {
+    top: 47.5%;
+  }
+}
+@media (width >= 1400px) {
+  .c-contents.-imgBg .c-contentsBox.-cafe-pic02 {
     top: 51%;
   }
 }
@@ -4539,7 +4589,22 @@ button.swiper-pagination-bullet {
 }
 @media (width >= 768px) {
   .c-contents.-imgBg .c-contentsBox.-cafe-pic03 {
+    top: 73%;
+  }
+}
+@media (width >= 1000px) {
+  .c-contents.-imgBg .c-contentsBox.-cafe-pic03 {
     top: 74%;
+  }
+}
+@media (width >= 1200px) {
+  .c-contents.-imgBg .c-contentsBox.-cafe-pic03 {
+    top: 71%;
+  }
+}
+@media (width >= 1400px) {
+  .c-contents.-imgBg .c-contentsBox.-cafe-pic03 {
+    top: 73%;
   }
 }
 .c-contents.-returnBtn a {

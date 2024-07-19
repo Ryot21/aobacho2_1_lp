@@ -115,6 +115,13 @@
         width: 100%;
         height: 1px;
         background: $main-color--w;
+
+    }
+    &.-cafe{
+        &::after{
+            @include min(1400){bottom: -10%;}
+
+        }
     }
 }
 
