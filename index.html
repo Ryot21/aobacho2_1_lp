@@ -459,13 +459,20 @@
         <div id="06" class="c-contents pdt5 pdt10s mgb10 mgb10s">
             <div class="c-contents-inner w1100">
                 <h2 class="s-LL -ls-15 -ws-n mgb3 mgb3s a-fadeRight -sc-auto">静寂と利便。<br>心が満たされる暮らし。</h2>
-                <div class="sp c-contents c-borderBox -solid"><img class="sp" src="images/item/location-map.jpg" alt=""></div>
-                <div id="canvasContainer" class="tb-pc c-contents -imgBg mgb3 mgb3s a-fadeUp -sc4">
+
+                <div class="c-borderBox -solid mgb3 mgb3s a-fadeUp -sc4">
+                    <div class="imgBox"><img src="images/item/location-map.jpg" alt=""></div>
+                </div>
+
+                <!-- ↓↓↓ ローカルでは動くが、本番環境で動かない為非表示 ↓↓↓ -->
+                <!-- <div id="canvasContainer" class="tb-pc c-contents -imgBg mgb3 mgb3s a-fadeUp -sc4">
                     <div class="imgBox">
                         <img src="images/item/location-map_bg.png" alt="物件周辺の周辺環境MAP">
                     </div>
                     <div class="c-contentsBox -center"><canvas id="myCanvas" width="" height=""></canvas></div>
                 </div>
+                <script src="js/imagesMouseScale.js"></script> -->
+
                 <p class="s-S -left -lh-2 -ls-2 mgb5 mgb5s a-fadeRight -sc-auto">
                     現地周辺の落ち着いた環境は、車の往来も少なく、子育てに適した環境が広がります。<br>
                     一方、現地から半径2キロ圏内にまで目を広げると、多くの生活利便施設に囲まれている事がわかります。<br>
@@ -873,7 +880,6 @@
             </div>
         <!---------- //モーダル関係 ---------->
     <!--------------------// 固定アイテム -------------------->
-    <script src="js/imagesMouseScale.js"></script>
 
     <script>
         // トップページ > fristView
