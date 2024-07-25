@@ -126,11 +126,11 @@
 }
 
 .c-borderBox{
-    padding: 3%;
+    // padding: 3%;
     @include min(768){
         // width: 95%;
         width: 100%;
-        padding: 1% 1% 2%;
+        // padding: 1% 1% 2%;
         margin-right: 0;
         margin-left: auto;
     }

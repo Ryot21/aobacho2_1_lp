@@ -2947,13 +2947,9 @@ button.swiper-pagination-bullet {
   }
 }
 
-.c-borderBox {
-  padding: 3%;
-}
 @media (width >= 768px) {
   .c-borderBox {
     width: 100%;
-    padding: 1% 1% 2%;
     margin-right: 0;
     margin-left: auto;
   }
