@@ -120,7 +120,7 @@
 				height: 100%;
 			}
 			// プラン
-			&.-kirakira01{
+			&.-kirakira01{//未実装
 
 				@include min(768){
 					top: 50%;
@@ -129,7 +129,7 @@
 					width: 33%;
 				}
 			}
-			&.-kirakira02{
+			&.-kirakira02{//SP,PC両方
 				top: -90px;
 				left: 50%;
 				width: 60%;
@@ -213,7 +213,16 @@
 			}
 			// カフェ
 			&.-cafe{
-				&-title{
+				&-contents{
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					@include min(768){
+						width: 65% !important;
+					}
+				}
+
+				&-title{//廃止
 					top: 3%;
 					left: 50%;
 					transform: translateX(-50%);
@@ -224,7 +233,7 @@
 					@include min(1400){top: 10.5%;}
 
 				}
-				&-pic01{
+				&-pic01{//廃止
 					top: 10%;
 					left: 50%;
 					transform: translateX(-50%);
@@ -235,7 +244,7 @@
 					@include min(1400){top: 28%;}
 
 				}
-				&-pic02{
+				&-pic02{//廃止
 					top: 39%;
 					left: 50%;
 					transform: translateX(-50%);
@@ -246,7 +255,7 @@
 					@include min(1400){top: 51%;}
 
 				}
-				&-pic03{
+				&-pic03{//廃止
 					top: 68%;
 					left: 50%;
 					transform: translateX(-50%);
