@@ -1,0 +1,74 @@
+.include-accordion{
+    .c-accordion__contents{// 表示・非表示をするコンテンツ
+        height: 0;
+        padding: 0;
+        overflow: hidden;
+        transition: 1s;
+        margin:0;
+        padding-top: 5%;
+    }
+    .c-accordion__btn{// btn
+
+        button{
+            position: relative;
+            width: 100%;
+            background: $site-color01;
+            padding: 3% 0;
+            // margin-bottom: 10%;
+            border: none;
+            cursor: pointer;
+            transition: 1s;
+        }
+        &:hover{
+            button{
+                background: $site-color01-hover;
+            }
+        }
+    }
+
+    // ボタン_矢印
+    button{
+        &::before,
+        &::after{// 共通
+            content:"";
+            position: absolute;
+            top: 50%;
+            width: 1.5px;
+            height: 8px;
+            background: $main-color--w;
+            transition: .5s;
+        }
+        &::before{
+            transform: rotate(-45deg) translateY(-50%);
+            right: 35px;
+        }
+        &::after{
+            transform: rotate(45deg) translateY(-50%);
+            right: 35px;
+        }
+    }
+
+
+    // クリック後
+    .active{
+        button{
+            &::before{
+                top: 35%;
+                transform: rotate(-135deg) translateY(-50%);
+            }
+            &::after{
+                top: 35%;
+                right: 36px;
+                transform: rotate(135deg) translateY(-50%);
+            }
+        }
+    }
+
+    ul:nth-of-type(2){ background-color: #357D87; }
+    ul:nth-of-type(2) ul{ background-color: #519FA5; border-top: 1px solid #5D9FA8; }
+    ul:nth-of-type(2) button:hover{ background-color: #1C4B56; }
+    ul:nth-of-type(2) li li{ border-bottom: 1px dotted #73BEBF; }
+    ul:nth-of-type(2) li.active li:last-child{ border-bottom:1px solid #5D9FA8; }
+    
+    ul.active{ overflow-y: auto; }
+}

@@ -6205,7 +6205,7 @@ a {
   }
 }
 .swiperArea .swiper-container .swiper-pagination .swiper-pagination-bullet:hover {
-  background: #5a8190;
+  background: #254257;
 }
 .swiperArea .swiper-container.thumbnail {
   width: 100%;
@@ -6697,6 +6697,72 @@ a {
   width: 100%;
   aspect-ratio: 4/4.5;
   border: none;
+}
+
+.include-accordion .c-accordion__contents {
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  transition: 1s;
+  margin: 0;
+  padding-top: 5%;
+}
+.include-accordion .c-accordion__btn button {
+  position: relative;
+  width: 100%;
+  background: #0a1b27;
+  padding: 3% 0;
+  border: none;
+  cursor: pointer;
+  transition: 1s;
+}
+.include-accordion .c-accordion__btn:hover button {
+  background: #254257;
+}
+.include-accordion button::before, .include-accordion button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 1.5px;
+  height: 8px;
+  background: #ffffff;
+  transition: 0.5s;
+}
+.include-accordion button::before {
+  transform: rotate(-45deg) translateY(-50%);
+  right: 35px;
+}
+.include-accordion button::after {
+  transform: rotate(45deg) translateY(-50%);
+  right: 35px;
+}
+.include-accordion .active button::before {
+  top: 35%;
+  transform: rotate(-135deg) translateY(-50%);
+}
+.include-accordion .active button::after {
+  top: 35%;
+  right: 36px;
+  transform: rotate(135deg) translateY(-50%);
+}
+.include-accordion ul:nth-of-type(2) {
+  background-color: #357D87;
+}
+.include-accordion ul:nth-of-type(2) ul {
+  background-color: #519FA5;
+  border-top: 1px solid #5D9FA8;
+}
+.include-accordion ul:nth-of-type(2) button:hover {
+  background-color: #1C4B56;
+}
+.include-accordion ul:nth-of-type(2) li li {
+  border-bottom: 1px dotted #73BEBF;
+}
+.include-accordion ul:nth-of-type(2) li.active li:last-child {
+  border-bottom: 1px solid #5D9FA8;
+}
+.include-accordion ul.active {
+  overflow-y: auto;
 }
 
 .p-top {
